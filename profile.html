@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
   <style>
   div.hh {
     background-color: #572C8C;
@@ -17,12 +18,7 @@
     z-index:100
     }
 
-    img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;}
-
-    a,div{font-family:'Reem Kufi', sans-serif;}
+    a,div{font-family:'Reem Kufi', sans-serif; font-size:20px}
 
     div.container{
       position:fixed;
@@ -34,47 +30,70 @@
 </head>
 <body>
 
-  <div class="hh">
-    <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-3">
-    <h1 style="color: #F2F2F2">Anti-Spyware</h1></div><div class="col-lg-8"></div>
-    </div>
-    <div class="row" style="height:30px"></div>
-    <div class="row">
-      <div class="col-lg-7"></div>
-      <div class="col-lg-1">
-      <a href="index.html" style="font-size:20px;color:#F2F2F2">Home</a></div>
-      <div class="col-lg-1"><a href="https://www1.nyc.gov/nychope/site/page/resources" style="font-size:20px;color:#F2F2F2">NYCHope</a></div>
-      <div class="col-lg-1"><a style="font-size:20px;color:#F2F2F2">&nbsp;&nbsp;&nbsp;&nbsp;About</a></div>
-      <div class="col-lg-1"><a style="font-size:20px;color:#F2F2F2">Contact</a></div>
-      <div class="col-lg-1"><a style="font-size:20px;color:#F2F2F2">FAQ</a></div>
+<div class="hh">
+  <div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-3">
+  <h1 style="color: #F2F2F2">Anti-Spyware</h1></div><div class="col-lg-8"></div>
   </div>
-  </div>
+  <div class="row" style="height:30px"></div>
+  <div class="row">
+    <div class="col-lg-7"></div>
+    <div class="col-lg-1">
+    <a href="index.html" style="font-size:20px;color:#F2F2F2">Home</a></div>
+    <div class="col-lg-1"><a href="https://www1.nyc.gov/nychope/site/page/resources" style="font-size:20px;color:#F2F2F2">NYCHope</a></div>
+    <div class="col-lg-1"><a href="https://drive.google.com/open?id=1xdi7ogAViLichPw_92Y9ulC3MqfvDQoN" style="font-size:20px;color:#F2F2F2">&nbsp;&nbsp;&nbsp;&nbsp;About</a></div>
+    <div class="col-lg-1"><a style="font-size:20px;color:#F2F2F2">Contact</a></div>
+    <div class="col-lg-1"><a style="font-size:20px;color:#F2F2F2">FAQ</a></div>
+</div>
+</div>
 
 
 <div class="container">
-  <!-- <h4>Disclaimer</h4>
-  <h5>We will be scanning the applications that are currently on your phone.
-    This is to check whether your personal information is being wrongfully accessed.
-    However, there is no guarantee that we will find anything useful.
-    We will not share the scanned results with any third parties or use them for illegal purposes.</h5> -->
-    <div class="row">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-<input type="text" name="First Name">
-  <img style="position:absolute;height:350px;align:center;" src="board.png" id="button3"></div>
+  <div  style="height:30px"></div>
+  <br>
+<br>
+  <div style="text-align:center">
+  <form action="mode.html">
+    Username:
+    <input type="text" name="firstname"><br>
+    Password:&nbsp;&nbsp;&nbsp;
+    <input type="password" name="lastname">
+    <br>
+    <div style="font-size:14px">
+    <input type="checkbox" id="remember">Remember Me</div><br>
+  <a href='mode.html' class='button'>SIGN IN</a>
 
-  <div class="col-lg-4"></div>
-</div>
-<div class="rows"><div class="col-lg-4"></div>
-  <div class="col-lg-1">
-<a href="mode.html" ><img src="back.png" style="margin-top:315px;height:30px;" id="back1"></a></div>
-<div class="col-lg-2"></div>
-<div class="col-lg-1">
-<a href="profile.html" ><img src="continue.png" style="margin-top:315px;height:30px;" id="continue1"></a></div>
-<div class="col-lg-4"></div>
-</div>
+
+  <br><br>
+
+
+
+  <!-- <input type="submit" value="Sign In"><br> -->
+  <!--<div id="submit1"><a href="mode.html"><img style="height:30px;" src="signin.png" id="signin_button"></a></div>-->
+  Forget Your Password?<br>
+  Don't have an account? <a>Sign up here!</a>
+
+  </form></div>
+
+
+  <!-- <div class="row">
+    <div class="col-lg-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-lg-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div> -->
 </div>
 
 </body>
