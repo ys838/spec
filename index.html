@@ -56,13 +56,13 @@
   <div style="text-align:center">
   <form action="mode.html">
     Username:
-    <input type="text" name="firstname" style="background-color:#FFFCFC;display:inline-block;box-shadow:0 1px #cccccc;"><p></p>
+    <input type="text" name="firstname" id="username" style="background-color:#FFFCFC;display:inline-block;box-shadow:0 1px #cccccc;"><p></p>
     Password:&nbsp;&nbsp;
-    <input type="password" name="lastname" style="background-color:#FFFCFC;display:inline-block;box-shadow:0 1px #cccccc;">
+    <input type="password" name="lastname" id="pwd" style="background-color:#FFFCFC;display:inline-block;box-shadow:0 1px #cccccc;">
     <br><p></p>
     <div style="font-size:14px">
     <input type="checkbox" id="remember">&nbsp;Remember Me</div><br>
-  <a href='mode.html' class='button'>SIGN IN</a>
+  <a href='' id="signin" class='button' onclick=myFunc()>SIGN IN</a>
 
 
   <br><br>
@@ -76,6 +76,27 @@
 
   </form></div>
 </div>
+
+<script type="text/javascript">
+function myFunc(){
+  // alert("YES, It Works...!!!");
+  var username = document.getElementById("username");
+  var pwd = document.getElementById("pwd");
+  var link = document.getElementById("signin");
+  if (username == ""){
+    alert("Please enter username.");
+  }
+  else if (pwd == ""){
+    alert("Please enter password.");
+  }
+  else if ((username == "") && (pwd == "")){
+    alert("Please fill in usernamen and password.");
+  }
+  else{
+    link.setAttribute("href", "mode.html");
+  }
+}
+</script>
 
 </body>
 </html>
