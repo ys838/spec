@@ -78,15 +78,20 @@ function checkSubmit() {
   <br><br><br><br>
   <p style="text-align:center;font-size:22px;color:#040E3F">Select phone system before scanning:</p>
   <p style="text-align:center;font-size:22px;color:#040E3F">
-  <input type="checkbox" id="android" onclick=onlyone()>
-    Android&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="checkbox" id="ios" onclick="onlyone()">
-    iOS </p>
+    <form>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="android" type="radio" name="phonetype" value="android" > Android
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ios" type="radio" name="phonetype" value="ios" > IOS<br>
+  
+  <!-- <input type="submit" style="margin-left:25px" class='button' value="BACK" onclick>
+
+  <input type="submit" value="Submit" class='button' style="margin-left:384px" > -->
+  
+</form>
   </div>
 
   <p style="margin-top:450px">
       <a href='confirm.html' class='button' style="margin-left:25px">BACK</a>
-      <a href='scanning.html' class='button' style="margin-left:384px">SCAN</a>
+      <a id ='scanButton'  class='button' style="margin-left:384px">SCAN</a>
   </p>
   </div>
   <div class="col-lg-3"></div>
@@ -94,70 +99,18 @@ function checkSubmit() {
   </div>
 
 
-        <!-- Please keep your phone unlocked while connecting...
-
-        <br>
-        <br>
-        Device Status: Connected
-
-        <br>
-
-        Select phone system before scanning
-        <br>
-        <br>
-         <input type="checkbox" id="android" onclick=onlyone()>
-           Android&nbsp;&nbsp;&nbsp;&nbsp;
-
-           <input type="checkbox" id="ios" onclick="onlyone()">
-           iOS<br>
-
-      <script type="text/javascript">
-      function onlyone{
-        var android = document.getElementById('android');
-        var ios = document.getElementById('ios');
-        if (android.checked){
-          ios.checked = false;
-        }
-        else if (ios.checked) {
-          android.checked = false;
-        }
-
-      }
-
-      function myfunction{
-        var android = document.getElementById("android");
-        var ios = document.getElementById("ios");
-        var link = document.getElementById("c");
-        if (android.checked || ios.checked){
-          link.setAttribute("href", "scanning.html");
-        }
-        else{
-          alert("Please select phone system before next step.");
-        }
-      }
-      </script>
-
-
-
-    <div class="row">
-    <div class="col-lg-4"></div>
-    <div class="col-lg-2">
-      <a href='confirm.html' class='button'>BACK</a></div>
-    <div class="col-lg-2">
-      <a href='' class='button' onclick=myfunction() id='c'>CONTINUE</a>
-    </div><div class="col-lg-4"></div>
-    </div>
-
-
-
-
-
-<div class="col-lg-2"></div>
-<div class="col-lg-1">
-
-<div class="col-lg-4"></div>
-</div>
-</div> -->
+        <script type="text/javascript">
+document.getElementById("scanButton").onclick = function(){
+if(!(document.getElementById("android").checked || document.getElementById("ios").checked))
+{
+alert("please select device type");
+}
+else
+{
+  window.location = "scanning.html"
+}
+ }
+</script>
 
 </body>
 </html>
